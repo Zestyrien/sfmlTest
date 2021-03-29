@@ -111,16 +111,6 @@ void Village::Loop()
     }
 
     //sf::Text fps;
-    spdlog::info("fps {}", std::to_string(1.0f / (std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count()/1000000.0f)));
-/*
-    fps.setString(std::to_string(1.0f / (std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count()/1000000.0f)));
-    fps.setCharacterSize(24);
-    fps.setFillColor(sf::Color::Red);
-    fps.setStyle(sf::Text::Bold);
-    window.draw(fps);*/
-    // draw everything here...
-    // window.draw(...);
-
     // end the current frame
     window.display();
   }
